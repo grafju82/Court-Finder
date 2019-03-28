@@ -14,3 +14,12 @@ def list_courts():
 def map():
     return render_template('courts/map.html')
 
+
+@courts.route('/courts/create')
+def create_court():
+    return render_template('/')
+
+
+@courts.route('/courts/auth/login')
+def create_court():
+    return render_template('/')
