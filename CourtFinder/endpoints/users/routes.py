@@ -29,3 +29,9 @@ def janedoe_route():
     user_name = "janedoe"
     user = User.query.filter_by(username=user_name).first()
     return render_template('users/profile.html', user=user)
+
+@users.route('/md')
+def MD_route():
+    user_name = "md"
+    user = User.query.filter_by(username=user_name).first()
+    return render_template('users/profile.html', user=user)
