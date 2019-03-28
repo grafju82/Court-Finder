@@ -9,4 +9,5 @@ class Config:
     DB_PASS = os.environ.get('DB_PASS')
 
     # Connection to Postgres server
-    SQLALCHEMY_DATABASE_URI = 'mysql://' + DB_USER + ':' + DB_PASS + '@192.155.88.112:3306/courtfinder'
+    #SQLALCHEMY_DATABASE_URI = 'mysql://' + DB_USER + ':' + DB_PASS + '@192.155.88.112:3306/courtfinder'
+    SQLALCHEMY_DATABASE_URI = 'mysql://admin:rE)9z4v6(RHNP)ii4N*vU@192.155.88.112:3306/courtfinder'
