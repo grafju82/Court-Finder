@@ -9,6 +9,12 @@ def list_courts():
     court = Court.query.all()
     return render_template('courts/courts.html', Courts=court)
 
+@courts.route('/courts/<int:court_id>/delete', methods=['GET', 'DELETE'])
+def remove_court(court_id):
+  court = Court.query.get_or_404(court_id)
+  Court.query.delete(court)
+  court = Court.query.all
+  return render_template('courts/courts.html', Courts=court)
 
 @courts.route('/map')
 def map():
